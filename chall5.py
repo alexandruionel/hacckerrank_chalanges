@@ -29,7 +29,7 @@
 
 
 thickness = int(input()) #This must be an odd number
-c = 'H'
+c = 'A'
 
 #Top Cone
 for i in range(thickness):
