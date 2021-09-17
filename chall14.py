@@ -9,9 +9,6 @@
 # Otherwise, print You are old..
 
 
-from typing import AsyncGenerator
-
-
 class Person:
     def __init__(self,initialAge):
         if initialAge <0:
