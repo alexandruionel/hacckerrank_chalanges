@@ -3,16 +3,16 @@
 
 # Note:  is considered to be an even index.
 
+def string(s):
+    result_even = ''
+    result_odd = ''
+    for i in range(len(s)):
+        if i % 2 == 0:
+            result_even += s[i]
+        else:
+            result_odd += s[i]
+    print(result_even + ' ' + result_odd)
 
-t = int(input())
-i= str(input())
-for i in range(0, t):
-    n = len(i)
-    index = 0
-    for index in range(0,i-1):
-        for c in range (i):
-            if c%2==0:
-                print(c," ")
-            else:
-                print(" ",c) 
-               
+if __name__ == '__main__':
+    for i in range(int(input())):
+        string(input())           
