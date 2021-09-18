@@ -25,5 +25,5 @@ if __name__ == '__main__':
     n = int(input().strip())
     for i in range(1,11):
         r = n*i
-        print(r)
+        print(n,"x",i,"=",r)
         
