@@ -5,7 +5,18 @@
 
 # Note: Your phone book should be a Dictionary/Map/HashMap data structure.
 
-n=str(input())+ "="+str(input())
-dict()
+# n=int(input())
+# for i in range(1,n):
+#      i=str(input())+" "+str(input())
+# dict()
+# i.update(dict)
+# print(dict)
+# # for k, v in dict.items(i):
+# #     if k in range(dict):
+# #         print(i)
+#     else:
+#         print("Not Found")    
 
-print(n)
+tuple_len = int(input())
+a = tuple(map(int, input().split(' ')))
+print (hash(a))
