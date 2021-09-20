@@ -5,18 +5,29 @@
 
 # Note: Your phone book should be a Dictionary/Map/HashMap data structure.
 
-# n=int(input())
-# for i in range(1,n):
-#      i=str(input())+" "+str(input())
-# dict()
-# i.update(dict)
-# print(dict)
-# # for k, v in dict.items(i):
-# #     if k in range(dict):
-# #         print(i)
-#     else:
-#         print("Not Found")    
+n=int(input())
 
-tuple_len = int(input())
-a = tuple(map(int, input().split(' ')))
-print (hash(a))
+# initialize a phonebook dictionary object
+phoneBook= {}
+
+# checking input data
+
+for i in range(n):
+     k, v = input().strip().split()
+     phoneBook[k]=v
+     
+# define a query function
+
+def query(k):
+     v= phoneBook[k]
+     print(k+"="+v)
+     return
+
+# checking input query
+
+for i in range(0, n+1):
+     k= input().strip()
+     try:
+          query(k)
+     except:
+          print("Not found")
